@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
-    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build && git add dist && git commit -m \"dist update\" && $values = git subtree split --prefix dist main && git push origin $values:gh-pages --force && Remove-Item dist -Force -Recurse",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build && git add dist && git commit -m \"dist update\" && $values = git subtree split --prefix dist main && git push origin \"$values\":gh-pages --force && Remove-Item dist -Force -Recurse",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
