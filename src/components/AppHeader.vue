@@ -1,7 +1,7 @@
 <template>
     <a class="group" id="page-wrap" href="#" rel="external noopener">
         <div id="inner-wrap">
-            <h1 class="">
+            <h1>
                 Bacle Visits
             </h1>
             <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 214.5" preserveAspectRatio="xMinYMid meet">
@@ -25,9 +25,15 @@
 </template>
 
 <style lang="css">
+    @media screen and (max-width: 600px) {
+        h1{
+            font-size: 12vw !important;
+        }
+    }
     h1{
         color: #203454;
-        font-size: 10vw;
+        font-size: 7vw;
+        margin-bottom: 0;
     }
     a:link{
         text-decoration:none !important;
@@ -40,7 +46,7 @@
         transform: translate(50%, -50%);
     }
     .waves{
-        top:-15px;
+        top:-10px;
         position: relative;
         width:100%;
     }

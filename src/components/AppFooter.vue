@@ -135,10 +135,10 @@
             <div>IUT - Université Claude Bernard Lyon 1</div>
         </div-->
         <div>
-            <div><b>Cyril DESCHAMPS</b><a href="#">Website</a></div>
-            <div><b>Clément DARNE</b><a href="#">Website</a></div>
-            <div><b>Lazare CHEVEREAU</b><a href="#">Website</a></div>
-            <div><b>Thomas PUJOL</b><a href="#">Website</a></div>
+            <div><a href="#"><b>Cyril DESCHAMPS</b></a></div>
+            <div><a href="#"><b>Clément DARNE</b></a></div>
+            <div><a href="#"><b>Lazare CHEVEREAU</b></a></div>
+            <div><a href="#"><b>Thomas PUJOL</b></a></div>
         </div>
         <div><img class="image" src="../assets/logo.png">
         <p>&copy; Thomas PUJOL </p><p>2021-{{ year }}</p>
@@ -202,11 +202,11 @@ body {
     font-family: 'Open Sans', sans-serif;
     .footer {
         z-index: 1;
-        --footer-background:#ED5565;
+        --footer-background:#1d6f9e;
         display:grid;
         position: relative;
         grid-area: footer;
-        min-height:12rem;
+        min-height:11rem;
         .bubbles {
             position: absolute;
             top:0;
@@ -230,7 +230,8 @@ body {
             display:grid;
             grid-template-columns: 1fr auto;
             grid-gap: 4rem;
-            padding:2rem;
+            padding:1.5rem;
+            padding-left:2rem;
             background:var(--footer-background);
             a, p {
                 color:#F5F7FA;
@@ -246,10 +247,12 @@ body {
             >div {
                 display:flex;
                 flex-direction:column;
-                justify-content: center;
                 >div {
+                    text-align: left;
+                    grid-template-columns: repeat(3, 50%);
                     margin:0.25rem 0;
                     >* {
+                        min-width: 100px;
                         margin-right:.5rem;
                     }
                 }
