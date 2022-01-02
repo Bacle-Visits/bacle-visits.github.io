@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
-    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build && git add dist && git commit -m \"dist update\" && .\\pushdist.bat && del /f /s /q dist",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build && git add dist && git commit -m \"dist update\" && .\\pushdist.bat",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
