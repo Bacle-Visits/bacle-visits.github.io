@@ -137,7 +137,7 @@
         <div>
             <div><a href="https://cyrildeschamps.fr/" target="_blank"><b>Cyril DESCHAMPS</b></a></div>
             <div><a href="https://clementdarne.fr/" target="_blank"><b>Clément DARNE</b></a></div>
-            <div><a href="https://lazarec.fr/" target="_blank"><b>Lazare CHEVEREAU</b></a></div>
+            <div><a href="https://web.lazarec.fr/" target="_blank"><b>Lazare CHEVEREAU</b></a></div>
             <div><a href="https://www.pujol.fr.eu.org/" target="_blank"><b>Thomas PUJOL</b></a></div>
         </div>
         <div><img class="image" src="../assets/logo.png">
