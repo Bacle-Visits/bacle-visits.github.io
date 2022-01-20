@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h2>La nouvelle application de création de voyages</h2>
-    <p>
+    <p style="text-align:center;">
       Bacle Visits est un projet mené dans le cadre du DUT Informatique préparé à l'Université Claude Bernard Lyon 1.
     </p>
     <h3>Trailer</h3>
@@ -28,12 +28,13 @@ export default defineComponent({
 .video {
   display:block;
   margin:auto;
+  text-align: center;
   margin-top:1em;
   width:80%;
   height:auto;
 }
 .video iframe {
-  min-width: 560px;
+  max-width:80vh;
   width:100%;
   min-height:315px;
   height:100%;

@@ -15,3 +15,9 @@ export default defineComponent({
   }
 })
 </script>
+
+<style>
+.home{
+  margin: auto 5%;
+}
+</style>

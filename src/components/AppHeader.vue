@@ -16,14 +16,14 @@
                 <li>
                 <div class="placeholder">
                     <div class="upside">
-                    <a href="#" class="button"><i class="fa fa-download"></i></a>
+                    <button class="button" id="download_app"><i class="fa fa-download"></i></button>
                     </div>
                 </div>
                 </li>
                 <li>
                 <div class="placeholder">
                     <div class="upside">
-                    <a href="#" class="button"><i class="fa fa-calendar-alt"></i></a>
+                      <a href="#" class="button"><i class="fa fa-calendar-alt"></i></a>
                     </div>
                 </div>
                 </li>
@@ -48,14 +48,42 @@
         </label>
     </section>
 
-    <a class="group" id="page-wrap" href="#" rel="external noopener">
+    <div class="group" id="page-wrap">
         <div id="inner-wrap">
             <h1 class="title">Bacle Visits</h1>
         </div>
-    </a>
+    </div>
 </template>
 
+<script>
+export default {
+  mounted () {
+    document.getElementById('download_app').addEventListener('click', function () {
+      if (navigator.userAgent.toLowerCase().indexOf('android') > -1) {
+        window.open('http://play.google.com/store/apps/details?id=com.bacle')
+      } else if (navigator.userAgent.toLowerCase().indexOf('iphone') > -1) {
+        window.open('https://apps.apple.com/fr/app/bacle/id1605219927', '_blank').focus()
+      } else {
+        alert('L\'application n\'est pas encore disponible pour les plateformes autres qu\'Android et iOS')
+      }
+    })
+  }
+}
+</script>
+
 <style lang="css">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width:100%;
+  color: #2c3e50;
+}
+
+h1,h2,h3{
+  text-align: center;
+}
+
 @media (max-width: 540px){
     .title{
         margin-top: 2em;
@@ -110,7 +138,6 @@
   z-index: 13;
   width: 340px;
   height: 243.33333333333334px;
-  transform: translateX(-135px);
   overflow: hidden;
 }
 .menu__active {
