@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <img alt="Bacle logo" height="300" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
   </div>
 </template>

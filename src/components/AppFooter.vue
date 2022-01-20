@@ -139,6 +139,7 @@
             <div><a href="#"><b>Clément DARNE</b></a></div>
             <div><a href="#"><b>Lazare CHEVEREAU</b></a></div>
             <div><a href="#"><b>Thomas PUJOL</b></a></div>
+            <div><a href="#" style="opacity: 10%;"><b>Sami SAIDI</b></a></div>
         </div>
         <div><img class="image" src="../assets/logo.png">
         <p>&copy; Thomas PUJOL </p><p>2021-{{ year }}</p>
@@ -198,16 +199,20 @@ body {
     grid-template-areas:"main" "footer";
     overflow-x:hidden;
     background:#F5F7FA;
-    min-height:100vh;
+    min-height:50vh;
     font-family: 'Open Sans', sans-serif;
     .footer {
-        z-index: 1;
-        --footer-background:#1d6f9e;
+        $footer-bt-color: #2d409a;
+        $footer-tp-color: #049fd8;
+        margin-top : 7em;
+        z-index: -1;
+        --footer-background: linear-gradient(to top,#2d409a, #049fd8); //linear-gradient(to top,#87CEEB, #c6ecf1);
         display:grid;
         position: relative;
         grid-area: footer;
         min-height:11rem;
         .bubbles {
+            --footer-background : #049fd8;
             position: absolute;
             top:0;
             left:0;

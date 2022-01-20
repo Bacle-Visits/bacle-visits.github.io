@@ -1,30 +1,336 @@
 <template>
+    <img alt="Bacle logo" class="logo" src="../assets/logo.png">
+    <section class="menu menu--circle">
+        <input type="checkbox" id="menu__active"/>
+        <label for="menu__active" class="menu__active">
+            <div class="menu__toggle">
+            <div class="icon">
+                <div class="hamburger"></div>
+            </div>
+            </div>
+            <input type="radio" name="arrow--up" id="degree--up-0"/>
+            <input type="radio" name="arrow--up" id="degree--up-1" />
+            <input type="radio" name="arrow--up" id="degree--up-2" />
+            <div class="menu__listings">
+            <ul class="circle">
+                <li>
+                <div class="placeholder">
+                    <div class="upside">
+                    <a href="https://codepen.io/logrithumn" class="button"><i class="fa fa-user"></i></a>
+                    </div>
+                </div>
+                </li>
+                <li>
+                <div class="placeholder">
+                    <div class="upside">
+                    <a href="#" class="button"><i class="fa fa-calendar"></i></a>
+                    </div>
+                </div>
+                </li>
+                <li>
+                <div class="placeholder">
+                    <div class="upside">
+                    <a href="#" class="button"><i class="fa fa-commenting"></i></a>
+                    </div>
+                </div>
+                </li>
+            </ul>
+            </div>
+            <div class="menu__arrow menu__arrow--top">
+            <ul>
+                <li>
+                <label for="degree--up-0"><div class="arrow"></div></label>
+                <label for="degree--up-1"><div class="arrow"></div></label>
+                <label for="degree--up-2"><div class="arrow"></div></label>
+                </li>
+            </ul>
+            </div>
+        </label>
+    </section>
+
     <a class="group" id="page-wrap" href="#" rel="external noopener">
         <div id="inner-wrap">
-            <h1>
-                Bacle Visits
-            </h1>
-            <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 214.5" preserveAspectRatio="xMinYMid meet">
-                <defs>
-                    <linearGradient id="a">
-                        <stop stop-color="#00A8DE" />
-                        <stop offset="0.2" stop-color="#333391" />
-                        <stop offset="0.4" stop-color="#E91388" />
-                        <stop offset="0.6" stop-color="#EB2D2E" />
-                    </linearGradient>
-                </defs>
-                <path fill="url(#a)" d="M2662.6 1S2532 41.2 2435 40.2c-19.6-.2-37.3-1.3-53.5-2.8 0 0-421.3-59.4-541-28.6-119.8 30.6-206.2 75.7-391 73.3-198.8-2-225.3-15-370.2-50-145-35-218 37-373.3 36-19.6 0-37.5-1-53.7-3 0 0-282.7-36-373.4-38C139 26 75 46-1 46v106c17-1.4 20-2.3 37.6-1.2 130.6 8.4 210 56.3 287 62.4 77 6 262-25 329.3-23.6 67 1.4 107 22.6 193 23.4 155 1.5 249-71 380-62.5 130 8.5 209 56.3 287 62.5 77 6 126-18 188-18 61.4 0 247-38 307.4-46 159.3-20 281.2 29 348.4 30 67 2 132.2 6 217.4 7 39.3 0 87-11 87-11V1z" />
-                <path fill="#F2F5F5" d="M2663.6 73.2S2577 92 2529 89c-130.7-8.5-209.5-56.3-286.7-62.4s-125.7 18-188.3 18c-5 0-10-.4-14.5-.7-52-5-149.2-43-220.7-39-31.7 2-64 14-96.4 30-160.4 80-230.2-5.6-340.4-18-110-12-146.6 20-274 36S820.4 0 605.8 0C450.8 0 356 71 225.2 62.2 128 56 60.7 28-.3 11.2V104c22 7.3 46 14.2 70.4 16.7 110 12.3 147-19.3 275-35.5s350 39.8 369 43c27 4.3 59 8 94 10 13 .5 26 1 39 1 156 2 250-70.3 381-62 130.5 8.2 209.5 56.3 286.7 62 77 6.4 125.8-18 188.3-17.5 5 0 10 .2 14.3.6 52 5 145 49.5 220.7 38.2 32-5 64-15 96.6-31 160.5-79.4 230.3 6 340 18.4 110 12 146.3-20 273.7-36l15.5-2V73l1-.5z" />
-                <g fill="none" stroke="#E2E9E9" stroke-width="1">
-                    <path d="M0 51.4c3.4.6 7.7 1.4 11 2.3 133.2 34 224.3 34 308.6 34 110.2 0 116.7 36.6 229.8 26 113-11 128.7-44 222-42.6C865 73 889 38 1002 27c113-10.8 119.6 25.6 229.8 25.6 84.4 0 175.4 0 308.6 34 133 34.2 277-73 379.4-84.3 204-22.5 283.6 128.7 283.6 128.7" />
-                    <path d="M0 6C115.7-6 198.3 76.6 308 76.6c109.6 0 131.8-20 223-28.3 114.3-10.2 238.2 0 238.2 0s124 10.2 238.3 0c91-8.2 113.2-28 223-28S1425 103 1541 91c115.8-11.8 153.3-69 269.3-84.6 116-15.5 198.4 71 308 71 109.8 0 131.8-20 223-28 114-10.2 237.7 0 237.7 0s37.4 2.4 82.8 3.7" />
-                </g>
-            </svg>
+            <h1 class="title">Bacle Visits</h1>
         </div>
     </a>
 </template>
 
 <style lang="css">
+@media (max-width: 540px){
+    .title{
+        margin-top: 2em;
+    }
+}
+
+.logo{
+    position: absolute;
+    border-bottom-left-radius: 20px;
+    top:0;
+    right:0;
+    width: 90px;
+    height: 90px;
+}
+.icon {
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.hamburger {
+  content: ' ';
+  position: relative;
+  width: 20px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: all 0.333333333333333s ease;
+}
+.hamburger:after,
+.hamburger:before {
+  content: ' ';
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  transition-property: top, bottom, transform;
+  transition-duration: 1s, 1s, 0.25s;
+}
+.hamburger:after {
+  top: -8px;
+}
+.hamburger:before {
+  bottom: -8px;
+}
+.menu {
+  pointer-events: none;
+}
+.menu--circle {
+  position: absolute;
+  z-index: 13;
+  width: 340px;
+  height: 243.33333333333334px;
+  transform: translateX(-135px);
+  overflow: hidden;
+}
+.menu__active {
+  position: relative;
+}
+.menu__toggle {
+  z-index: 11;
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 200px;
+  height: 200px;
+  background-color: #392338;
+  border-radius: 50%;
+  transition: transform 1.3s;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.menu__listings {
+  z-index: 10;
+  position: absolute;
+  top: -200px;
+  left: -200px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  transform: scale(0.1) rotate(150deg);
+  transition: transform 1s;
+}
+.menu__arrow {
+  visibility: hidden;
+  position: absolute;
+}
+.menu__arrow input[type="radio"] {
+  position: fixed;
+  top: -99999px;
+  left: -99999px;
+}
+.menu__arrow ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.menu__arrow--top {
+  top: 0.5em;
+  left: 220px;
+}
+.menu__arrow--top .arrow {
+  transform: rotate(-45deg);
+}
+.menu__arrow--left {
+  top: 220px;
+  left: 0.5em;
+}
+.menu__arrow--left .arrow {
+  transform: rotate(-135deg);
+}
+.arrow {
+  width: 20px;
+  height: 20px;
+  border-right: 6.666666666666667px solid #392338;
+  border-top: 6.666666666666667px solid #392338;
+  border-radius: 3px;
+  transition: border-color 0.3s;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.arrow:hover {
+  border-color: #ff947f;
+  transition: border-color 0.3s;
+}
+.circle {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #392338;
+  border-radius: 50%;
+  transform: rotate(70deg);
+  overflow: hidden;
+  list-style: none;
+}
+.circle li {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  transform-origin: 0 100%;
+}
+.circle li .placeholder {
+  position: absolute;
+  left: -100%;
+  padding-top: 1.5em;
+  width: 200%;
+  height: 200%;
+  text-align: center;
+  transform: skewY(54deg) rotate(18deg);
+}
+.circle li .placeholder .upside {
+  transform: rotate(180deg);
+}
+.circle li .placeholder a {
+  text-decoration: none;
+  pointer-events: auto;
+}
+.circle li .placeholder button {
+  pointer-events: auto;
+}
+.circle li .placeholder .button {
+  font-size: 2.3em;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.circle li:nth-child(1) {
+  transform: rotate(0deg) skewY(-54deg);
+  background-color: #392338;
+}
+.circle li:nth-child(2) {
+  transform: rotate(36deg) skewY(-54deg);
+  background-color: #392338;
+}
+.circle li:nth-child(3) {
+  transform: rotate(72deg) skewY(-54deg);
+  background-color: #392338;
+}
+.circle li:nth-child(4) {
+  transform: rotate(108deg) skewY(-54deg);
+  background-color: #392338;
+}
+.circle li:nth-child(5) {
+  transform: rotate(144deg) skewY(-54deg);
+  background-color: #392338;
+}
+.circle li:nth-child(6) {
+  transform: rotate(180deg) skewY(-54deg);
+  background-color: #392338;
+}
+.circle li:nth-child(7) {
+  transform: rotate(216deg) skewY(-54deg);
+  background-color: #392338;
+}
+.circle li:nth-child(8) {
+  transform: rotate(252deg) skewY(-54deg);
+  background-color: #392338;
+}
+.circle li:nth-child(9) {
+  transform: rotate(288deg) skewY(-54deg);
+  background-color: #392338;
+}
+.circle li:nth-child(10) {
+  transform: rotate(324deg) skewY(-54deg);
+  background-color: #392338;
+}
+#menu__active {
+  position: fixed;
+  top: -99999px;
+  left: -99999px;
+}
+#menu__active:checked ~ label .menu__listings {
+  transform: rotate(10deg) scale(1);
+  transition: transform 1s;
+}
+#menu__active:checked ~ label .menu__toggle {
+  background-color: #fff;
+  transition: all 1s;
+}
+#menu__active:checked ~ label .hamburger {
+  border-color: transparent;
+  transition: border-color 0.333333333333333s;
+}
+#menu__active:checked ~ label .hamburger:after {
+  top: -2px;
+  border-color: #392338;
+  transform: translateX(-50%) rotate(45deg);
+  transition-property: top, transform;
+  transition-duration: 0.25s, 1s;
+}
+#menu__active:checked ~ label .hamburger:before {
+  bottom: -2px;
+  border-color: #392338;
+  transform: translateX(-50%) rotate(-45deg);
+  transition-property: bottom, transform;
+  transition-duration: 0.25s, 1s;
+}
+#menu__active:checked ~ label .button:hover {
+  color: #c1264e;
+}
+#menu__active:checked ~ label .menu__arrow {
+  visibility: visible;
+  transition: all 1s 1.111111111111111s;
+}
+#menu__active:checked ~ label .menu__arrow--top label {
+  display: none;
+}
+#menu__active:checked ~ label .menu__arrow--top label[for="degree--up-0"] {
+  display: block;
+}
+#menu__active:checked ~ label #degree--up-0:checked ~ .menu__listings {
+  transform: rotate(116deg);
+}
+#menu__active:checked ~ label #degree--up-0:checked ~ .menu__arrow--top label {
+  display: none;
+}
+#menu__active:checked ~ label #degree--up-0:checked ~ .menu__arrow--top label[for="degree--up-1"] {
+  display: block;
+}
+#menu__active:checked ~ label #degree--up-1:checked ~ .menu__listings {
+  transform: rotate(224deg);
+}
+#menu__active:checked ~ label #degree--up-1:checked ~ .menu__listings ~ .menu__arrow--top label {
+  display: none;
+}
+#menu__active:checked ~ label #degree--up-1:checked ~ .menu__listings ~ .menu__arrow--top label[for="degree--up-2"] {
+  display: block;
+}
+
     @media screen and (max-width: 600px) {
         h1{
             font-size: 12vw !important;
