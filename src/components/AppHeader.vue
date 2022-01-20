@@ -1,5 +1,5 @@
 <template>
-    <img alt="Bacle logo" class="logo" src="../assets/logo.png">
+    <a href="/"><img alt="Bacle logo" class="logo" src="../assets/logo.png"></a>
     <section class="menu menu--circle">
         <input type="checkbox" id="menu__active"/>
         <label for="menu__active" class="menu__active">

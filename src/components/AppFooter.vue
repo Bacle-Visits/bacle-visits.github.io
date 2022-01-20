@@ -135,11 +135,10 @@
             <div>IUT - Université Claude Bernard Lyon 1</div>
         </div-->
         <div>
-            <div><a href="#"><b>Cyril DESCHAMPS</b></a></div>
-            <div><a href="#"><b>Clément DARNE</b></a></div>
-            <div><a href="#"><b>Lazare CHEVEREAU</b></a></div>
-            <div><a href="#"><b>Thomas PUJOL</b></a></div>
-            <div><a href="#"><b>Sami SAIDI</b></a></div>
+            <div><a href="https://cyrildeschamps.fr/" target="_blank"><b>Cyril DESCHAMPS</b></a></div>
+            <div><a href="https://clementdarne.fr/" target="_blank"><b>Clément DARNE</b></a></div>
+            <div><a href="https://lazarec.fr/" target="_blank"><b>Lazare CHEVEREAU</b></a></div>
+            <div><a href="https://www.pujol.fr.eu.org/" target="_blank"><b>Thomas PUJOL</b></a></div>
         </div>
         <div><img class="image" src="../assets/logo.png">
         <p>&copy; Thomas PUJOL </p><p>2021-{{ year }}</p>
@@ -196,7 +195,6 @@ body {
         $footer-bt-color: #2d409a;
         $footer-tp-color: #049fd8;
         margin-top : 7em;
-        z-index: -1;
         --footer-background: linear-gradient(to top,#2d409a, #049fd8); //linear-gradient(to top,#87CEEB, #c6ecf1);
         display:grid;
         position: relative;
