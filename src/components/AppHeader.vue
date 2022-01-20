@@ -4,47 +4,47 @@
         <input type="checkbox" id="menu__active"/>
         <label for="menu__active" class="menu__active">
             <div class="menu__toggle">
-            <div class="icon">
-                <div class="hamburger"></div>
+              <div class="icon">
+                  <div class="hamburger"></div>
+              </div>
             </div>
-            </div>
-            <input type="radio" name="arrow--up" id="degree--up-0"/>
+            <!--input type="radio" name="arrow--up" id="degree--up-0"/>
             <input type="radio" name="arrow--up" id="degree--up-1" />
-            <input type="radio" name="arrow--up" id="degree--up-2" />
+            <input type="radio" name="arrow--up" id="degree--up-2" /-->
             <div class="menu__listings">
             <ul class="circle">
-                <li>
+              <li>
                 <div class="placeholder">
                     <div class="upside">
                     <button class="button" id="download_app"><i class="fa fa-download"></i></button>
                     </div>
                 </div>
-                </li>
-                <li>
+              </li>
+              <li>
                 <div class="placeholder">
                     <div class="upside">
                       <a href="#" class="button"><i class="fa fa-calendar-alt"></i></a>
                     </div>
                 </div>
-                </li>
-                <li>
+              </li>
+              <li>
                 <div class="placeholder">
                     <div class="upside">
-                    <a href="#" class="button"><i class="fa fa-commenting"></i></a>
+                      <a href="#" class="button"><i class="fa fa-commenting"></i></a>
                     </div>
                 </div>
-                </li>
+              </li>
             </ul>
             </div>
-            <div class="menu__arrow menu__arrow--top">
-            <ul>
+            <!--div class="menu__arrow menu__arrow--top">
+              <ul>
                 <li>
                 <label for="degree--up-0"><div class="arrow"></div></label>
                 <label for="degree--up-1"><div class="arrow"></div></label>
                 <label for="degree--up-2"><div class="arrow"></div></label>
                 </li>
-            </ul>
-            </div>
+              </ul>
+            </div-->
         </label>
     </section>
 
