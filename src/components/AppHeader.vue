@@ -16,14 +16,14 @@
                 <li>
                 <div class="placeholder">
                     <div class="upside">
-                    <a href="https://codepen.io/logrithumn" class="button"><i class="fa fa-user"></i></a>
+                    <a href="#" class="button"><i class="fa fa-download"></i></a>
                     </div>
                 </div>
                 </li>
                 <li>
                 <div class="placeholder">
                     <div class="upside">
-                    <a href="#" class="button"><i class="fa fa-calendar"></i></a>
+                    <a href="#" class="button"><i class="fa fa-calendar-alt"></i></a>
                     </div>
                 </div>
                 </li>
