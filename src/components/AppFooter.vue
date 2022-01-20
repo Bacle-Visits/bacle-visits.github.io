@@ -139,7 +139,7 @@
             <div><a href="#"><b>Clément DARNE</b></a></div>
             <div><a href="#"><b>Lazare CHEVEREAU</b></a></div>
             <div><a href="#"><b>Thomas PUJOL</b></a></div>
-            <div><a href="#" style="opacity: 10%;"><b>Sami SAIDI</b></a></div>
+            <div><a href="#"><b>Sami SAIDI</b></a></div>
         </div>
         <div><img class="image" src="../assets/logo.png">
         <p>&copy; Thomas PUJOL </p><p>2021-{{ year }}</p>
