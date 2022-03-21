@@ -23,7 +23,7 @@
               <li>
                 <div class="placeholder">
                     <div class="upside">
-                      <a href="#" class="button"><i class="fa fa-calendar-alt"></i></a>
+                      <a href="#" @click="showModal = true" class="button"><i class="fa fa-calendar-alt"></i></a>
                     </div>
                 </div>
               </li>
@@ -53,10 +53,41 @@
             <h1 class="title">Bacle Visits</h1>
         </div>
     </div>
+    <vue-final-modal v-model="showModal">
+      <div id="modal">
+        <div>
+          <h2>Calendrier du projet</h2>
+          <div id="vuetimeline">
+            <section class="timeline">
+              <ul>
+                <li>
+                  <span></span>
+                  <div>Émergence du projet</div>
+                  <div>Réalisation du Dossier de Conception Logiciel</div>
+                  <div>IUT Lyon 1</div>
+                  <div class="year">
+                    <span>Dec. 2020</span>
+                    <span>Juin 2021</span>
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </vue-final-modal>
 </template>
 
 <script>
+import { VueFinalModal } from 'vue-final-modal'
+
 export default {
+  components: {
+    VueFinalModal
+  },
+  data: () => ({
+    showModal: true
+  }),
   mounted () {
     document.getElementById('download_app').addEventListener('click', function () {
       if (navigator.userAgent.toLowerCase().indexOf('android') > -1) {
@@ -71,8 +102,110 @@ export default {
 }
 </script>
 
-<style lang="css">
-#app {
+<style lang="css">@import url("https://fonts.googleapis.com/css?family=Montserrat");
+#vuetimeline *, #vuetimeline *::before, #vuetimeline *::after {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+#vuetimeline {
+  width: 100%;
+  height: inherit;
+  margin: 1em auto;
+  background: #2E4A62;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.timeline {
+  padding: 5px 45px;
+  margin:auto;
+}
+.timeline ul {
+  position: relative;
+}
+.timeline ul::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.timeline li {
+  position: relative;
+  margin: 60px 80px;
+  width: 100%;
+  list-style: none;
+  line-height: 25px;
+}
+.timeline li > span {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  left: -25px;
+  height: 110%;
+  border: 2px solid #fff;
+  border-radius: none;
+}
+.timeline li > span::before, .timeline li > span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  left: -11px;
+  background: #4e9bfa;
+}
+.timeline li > span::before {
+  top: -15px;
+}
+.timeline li > span::after {
+  top: calc(100% - 5px);
+}
+.timeline li div:nth-child(2) {
+  font-size: 1.2em;
+}
+.timeline li div:nth-child(3), .timeline li div:nth-child(4) {
+  font-size: 1em;
+  font-style: italic;
+  color: #bfbfbf;
+}
+.timeline li .year span {
+  position: absolute;
+  font-size: 1em;
+  left: -150px;
+  width: 100px;
+  text-align: right;
+}
+.timeline li .year span:first-child {
+  top: -15px;
+}
+.timeline li .year span:last-child {
+  top: 100%;
+}
+#modal{
+  width:100%;
+  height:100%;
+}
+#modal > div{
+  border-radius: 1em;
+  margin: 0;
+  padding:1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width:80%;
+  height:80%;
+  background-color: white;
+}
+#vuetimeline {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
