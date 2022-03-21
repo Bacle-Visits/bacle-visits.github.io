@@ -30,7 +30,7 @@
               <li>
                 <div class="placeholder">
                     <div class="upside">
-                      <a href="#" class="button"><i class="fa fa-commenting"></i></a>
+                      <a href="mailto:thomaspujol69@gmail.com" class="button"><i class="fa fa-commenting"></i></a>
                     </div>
                 </div>
               </li>
@@ -86,27 +86,27 @@ export default {
     VueFinalModal
   },
   data: () => ({
-    showModal: true,
+    showModal: false,
     items: [
       {
-        date1: 'Mai 2022',
-        date2: 'Jan. 2022',
-        title: 'Émergence du projet',
-        subtitle1: 'Réalisation du Dossier de Conception Logiciel',
-        subtitle2: 'IUT Lyon 1'
+        date1: 'Today',
+        date2: 'Juin 2022',
+        title: 'Maintenance',
+        subtitle1: 'De l\'application mobile',
+        subtitle2: 'et de l\'API'
       },
       {
         date1: 'Mai 2022',
         date2: 'Jan. 2022',
-        title: 'Émergence du projet',
-        subtitle1: 'Réalisation du Dossier de Conception Logiciel',
+        title: 'Ajout des fonctionalités secondaires',
+        subtitle1: 'Et correction de bugs',
         subtitle2: 'IUT Lyon 1'
       },
       {
         date1: 'Dec. 2021',
         date2: 'Juil. 2021',
-        title: 'Émergence du projet',
-        subtitle1: 'Réalisation du Dossier de Conception Logiciel',
+        title: 'Développement',
+        subtitle1: 'Création des fonctionalités principales',
         subtitle2: 'IUT Lyon 1'
       },
       {
