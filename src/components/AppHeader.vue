@@ -60,14 +60,14 @@
           <div id="vuetimeline">
             <section class="timeline">
               <ul>
-                <li>
+                <li v-for="i in items" :key="i.date1">
                   <span></span>
-                  <div>Émergence du projet</div>
-                  <div>Réalisation du Dossier de Conception Logiciel</div>
-                  <div>IUT Lyon 1</div>
+                  <div>{{i.title}}</div>
+                  <div>{{i.subtitle1}}</div>
+                  <div>{{i.subtitle2}}</div>
                   <div class="year">
-                    <span>Dec. 2020</span>
-                    <span>Juin 2021</span>
+                    <span>{{ i.date1 }}</span>
+                    <span>{{ i.date2 }}</span>
                   </div>
                 </li>
               </ul>
@@ -86,7 +86,37 @@ export default {
     VueFinalModal
   },
   data: () => ({
-    showModal: true
+    showModal: true,
+    items: [
+      {
+        date1: 'Dec. 2020',
+        date2: 'Juin 2021',
+        title: 'Émergence du projet',
+        subtitle1: 'Réalisation du Dossier de Conception Logiciel',
+        subtitle2: 'IUT Lyon 1'
+      },
+      {
+        date1: 'Juil. 2021',
+        date2: 'Dec. 2021',
+        title: 'Émergence du projet',
+        subtitle1: 'Réalisation du Dossier de Conception Logiciel',
+        subtitle2: 'IUT Lyon 1'
+      },
+      {
+        date1: 'Jan. 2022',
+        date2: 'Mai 2022',
+        title: 'Émergence du projet',
+        subtitle1: 'Réalisation du Dossier de Conception Logiciel',
+        subtitle2: 'IUT Lyon 1'
+      },
+      {
+        date1: 'Jan. 2022',
+        date2: 'Mai 2022',
+        title: 'Émergence du projet',
+        subtitle1: 'Réalisation du Dossier de Conception Logiciel',
+        subtitle2: 'IUT Lyon 1'
+      }
+    ]
   }),
   mounted () {
     document.getElementById('download_app').addEventListener('click', function () {
@@ -114,16 +144,21 @@ export default {
   height: inherit;
   margin: 1em auto;
   background: #2E4A62;
-  border-radius: 4px;
+  border-radius: 1em;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .timeline {
   padding: 5px 45px;
   margin:auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height:64vh;
 }
 .timeline ul {
   position: relative;
+  width:fit-content;
+  margin:auto;
 }
 .timeline ul::before {
   content: "";
@@ -135,7 +170,8 @@ export default {
 .timeline li {
   position: relative;
   margin: 60px 80px;
-  width: 100%;
+  margin-right: 0;
+  width: fit-content;
   list-style: none;
   line-height: 25px;
 }
@@ -195,13 +231,13 @@ export default {
 #modal > div{
   border-radius: 1em;
   margin: 0;
-  padding:1em;
+  padding:1em 5vw;
   position: absolute;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width:80%;
+  width:fit-content;
   height:80%;
   background-color: white;
 }
