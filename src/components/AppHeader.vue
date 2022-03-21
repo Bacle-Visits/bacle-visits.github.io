@@ -89,29 +89,29 @@ export default {
     showModal: true,
     items: [
       {
-        date1: 'Dec. 2020',
-        date2: 'Juin 2021',
+        date1: 'Mai 2022',
+        date2: 'Jan. 2022',
         title: 'Émergence du projet',
         subtitle1: 'Réalisation du Dossier de Conception Logiciel',
         subtitle2: 'IUT Lyon 1'
       },
       {
-        date1: 'Juil. 2021',
-        date2: 'Dec. 2021',
+        date1: 'Mai 2022',
+        date2: 'Jan. 2022',
         title: 'Émergence du projet',
         subtitle1: 'Réalisation du Dossier de Conception Logiciel',
         subtitle2: 'IUT Lyon 1'
       },
       {
-        date1: 'Jan. 2022',
-        date2: 'Mai 2022',
+        date1: 'Dec. 2021',
+        date2: 'Juil. 2021',
         title: 'Émergence du projet',
         subtitle1: 'Réalisation du Dossier de Conception Logiciel',
         subtitle2: 'IUT Lyon 1'
       },
       {
-        date1: 'Jan. 2022',
-        date2: 'Mai 2022',
+        date1: 'Juin 2021',
+        date2: 'Dec. 2020',
         title: 'Émergence du projet',
         subtitle1: 'Réalisation du Dossier de Conception Logiciel',
         subtitle2: 'IUT Lyon 1'
